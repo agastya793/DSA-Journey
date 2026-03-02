@@ -1,0 +1,44 @@
+If the array is:
+
+arr = []
+
+What happens?
+
+for i in range(len(arr) - 1):
+
+len(arr) = 0
+So:
+
+range(0 - 1) → range(-1)
+
+In Python:
+
+range(-1)
+
+means → no iterations.
+
+So the loop will NOT run even once.
+
+Then it reaches:
+
+return True
+ So the function returns:
+True
+
+NOT null.
+
+ Why True?
+
+Because an empty array has:
+
+No elements
+
+No violations
+
+Nothing breaking sorted order
+
+In mathematics and programming, an empty list is considered sorted.
+
+
+
+
