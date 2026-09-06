@@ -1,11 +1,12 @@
 class Solution:
-    def missingNum(self, arr):
-        # code here
-        n = len(arr)+1
-    
-        total = n*(n+1)//2
-        array_sum = sum(arr)
-        return total - array_sum
-    
-    
+    def missingNum(self,arr):
+        n= len(arr) + 1
+        xor = 0
         
+        for i in range(1, n+1):
+            xor ^= i
+            
+        for num in arr:
+            xor ^= num
+        
+        return xor    
